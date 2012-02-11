@@ -10,6 +10,7 @@
 		0908DF9014E6DB2300C91B7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0908DF8F14E6DB2300C91B7D /* Foundation.framework */; };
 		0908DF9314E6DB2300C91B7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0908DF9214E6DB2300C91B7D /* main.m */; };
 		0908DF9714E6DB2300C91B7D /* omnifocus.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0908DF9614E6DB2300C91B7D /* omnifocus.1 */; };
+		0908DFD214E7031300C91B7D /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0908DFD114E7031300C91B7D /* ScriptingBridge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +30,10 @@
 		0908DF8B14E6DB2300C91B7D /* omnifocus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = omnifocus; sourceTree = BUILT_PRODUCTS_DIR; };
 		0908DF8F14E6DB2300C91B7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0908DF9214E6DB2300C91B7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0908DF9514E6DB2300C91B7D /* omnifocus-Prefix.pch */ = {isa = PBXFileReference; path = "omnifocus-Prefix.pch"; sourceTree = "<group>"; };
+		0908DF9514E6DB2300C91B7D /* omnifocus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "omnifocus-Prefix.pch"; sourceTree = "<group>"; };
 		0908DF9614E6DB2300C91B7D /* omnifocus.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = omnifocus.1; sourceTree = "<group>"; };
+		0908DFD014E6FD5500C91B7D /* Omnifocus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Omnifocus.h; path = ../../../Dropbox/omnifocus_cli/Omnifocus.h; sourceTree = "<group>"; };
+		0908DFD114E7031300C91B7D /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0908DFD214E7031300C91B7D /* ScriptingBridge.framework in Frameworks */,
 				0908DF9014E6DB2300C91B7D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +52,7 @@
 		0908DF8014E6DB2300C91B7D = {
 			isa = PBXGroup;
 			children = (
+				0908DFD114E7031300C91B7D /* ScriptingBridge.framework */,
 				0908DF9114E6DB2300C91B7D /* omnifocus */,
 				0908DF8E14E6DB2300C91B7D /* Frameworks */,
 				0908DF8C14E6DB2300C91B7D /* Products */,
@@ -73,6 +78,7 @@
 		0908DF9114E6DB2300C91B7D /* omnifocus */ = {
 			isa = PBXGroup;
 			children = (
+				0908DFD014E6FD5500C91B7D /* Omnifocus.h */,
 				0908DF9214E6DB2300C91B7D /* main.m */,
 				0908DF9614E6DB2300C91B7D /* omnifocus.1 */,
 				0908DF9414E6DB2300C91B7D /* Supporting Files */,
