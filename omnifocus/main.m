@@ -15,7 +15,7 @@ int main (int argc, const char * argv[])
     if (argc > 1) {
         name = [NSString stringWithCString:argv[1] encoding:NSASCIIStringEncoding] ;
     } else { 
-        name = @"from obj-c when there wasn't an arg @Work d(tomorrow 6am) s(now)";
+        name = @"from obj-c when there wasn't an arg @Work d(tomorrow 6am) s(now) #pivotal ";
     }
 
     [Task createTaskFromDictionary:name];

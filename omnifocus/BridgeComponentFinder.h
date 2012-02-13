@@ -20,6 +20,7 @@
 - (omnifocusContext*) findContextByName: (NSString*)name;
 - (omnifocusProject*) findProjectByName: (NSString*)name;
 - (omnifocusProject*) findFuzzyProjectByName: (NSString*)name;
+- (NSString*) fuzzyFindByName:(NSString*)name andType:(NSString*)type;
 @end
 
 #endif

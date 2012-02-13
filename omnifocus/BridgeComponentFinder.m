@@ -50,9 +50,45 @@
 }
 
 - (omnifocusProject*) findFuzzyProjectByName: (NSString*)name {
-    return [[[self getOmnifocus] complete:name 
-                                      as:[NSNumber numberWithInt:[[NSAppleEventDescriptor descriptorWithString:@"project"] int32Value]]
-            ] objectAtIndex:0];
+    return [self findProjectByName:[self fuzzyFindByName:name andType:@"project"]];
 }
+- (omnifocusContext*) findFuzzyContextByName: (NSString*)name {
+    return [self findContextByName:[self fuzzyFindByName:name andType:@"context"]];
+}
+
+- (NSString*) fuzzyFindByName:(NSString*)name andType:(NSString*)type {
+    NSString *s = [NSString stringWithFormat:
+                   @"tell application \"OmniFocus\" to tell «property FCDo»\n"
+                   @"\tset TheSearch to \"pivotal\"\n"
+                   @"\tset ProjectArray to complete TheSearch as project maximum matches 1\n"
+                   @"\treturn name of first item in ProjectArray\n"
+                   @"end tell\n"
+                   , name, type];
+    
+    NSAppleScript *scriptObj = [[NSAppleScript alloc] initWithSource:s];
+    NSDictionary *compileErrInfo;
+    [scriptObj compileAndReturnError:&compileErrInfo];
+    
+    if (scriptObj) {
+        NSDictionary *errInfo;
+        NSAppleEventDescriptor *aed = [scriptObj executeAndReturnError:&errInfo];
+        [scriptObj release];
+        if (aed) {
+            return [aed stringValue];
+        }
+    }
+
+}
+
+//NSString *s = [NSString stringWithFormat:
+//               @"tell application \"OmniFocus\"\n"
+//               @"\ttell default document\n"
+//               @"\t\tset ProjectArray to complete \"%@\" as %@ maximum matches 1\n"
+//               @"\tend tell\n"
+//               @"\treturn first item in ProjectArray\n"
+//               @"end tell\n"
+//               , name, type];
+//NSString *return_value = nil;
+
 
 @end

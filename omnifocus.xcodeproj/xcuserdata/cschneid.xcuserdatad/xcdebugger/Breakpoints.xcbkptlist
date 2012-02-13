@@ -37,11 +37,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "omnifocus/BridgeComponentFinder.m"
-         timestampString = "350715306.362863"
+         timestampString = "350853734.767944"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "55"
-         endingLineNumber = "55"
+         startingLineNumber = "53"
+         endingLineNumber = "53"
          landmarkName = "-findFuzzyProjectByName:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -51,12 +51,54 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "omnifocus/BridgeComponentFinder.m"
-         timestampString = "350717129.439185"
+         timestampString = "350859425.068524"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "55"
-         endingLineNumber = "55"
-         landmarkName = "-findFuzzyProjectByName:"
+         startingLineNumber = "66"
+         endingLineNumber = "66"
+         landmarkName = "-fuzzyFindByName:andType:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "omnifocus/BridgeComponentFinder.m"
+         timestampString = "350859425.068524"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "76"
+         endingLineNumber = "76"
+         landmarkName = "-fuzzyFindByName:andType:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "omnifocus/BridgeComponentFinder.m"
+         timestampString = "350859425.068524"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "82"
+         endingLineNumber = "82"
+         landmarkName = "@implementation BridgeComponentFinder"
+         landmarkType = "3">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "omnifocus/BridgeComponentFinder.m"
+         timestampString = "350859420.376253"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "72"
+         endingLineNumber = "72"
+         landmarkName = "-fuzzyFindByName:andType:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
