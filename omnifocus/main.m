@@ -6,37 +6,19 @@
 //  Copyright 2012 Personal. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <ScriptingBridge/ScriptingBridge.h>
-#import "Omnifocus.h"
+#include "main.h"
 
 int main (int argc, const char * argv[])
 {
 
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-
     NSString *name;
-    if (argc > 0) {
-        name = [NSString stringWithCString:argv[1]];
-    } else {
-        name = @"from obj-c when there wasn't an arg";
+    if (argc > 1) {
+        name = [NSString stringWithCString:argv[1] encoding:NSASCIIStringEncoding] ;
+    } else { 
+        name = @"from obj-c when there wasn't an arg @Work d(tomorrow 6am) s(now)";
     }
-        
-    
-    omnifocusApplication *omnifocus = [SBApplication applicationWithBundleIdentifier:@"com.omnigroup.OmniFocus"];
-    
-    [omnifocus classForScriptingClass:@"task"];
-    
-    omnifocusDocument *document = [omnifocus defaultDocument];
-    
-    NSDictionary *taskprops = [[NSDictionary alloc] initWithObjectsAndKeys:name, @"name", nil];
-                 
-    omnifocusTask *task = [[[[omnifocus classForScriptingClass:@"task"] alloc] initWithProperties:taskprops] autorelease];
-    
-    [[document inboxTasks] addObject:task];
-    
-    
-    [pool drain];
+
+    [Task createTaskFromDictionary:name];
+
     return 0;
 }
-

@@ -11,6 +11,9 @@
 		0908DF9314E6DB2300C91B7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0908DF9214E6DB2300C91B7D /* main.m */; };
 		0908DF9714E6DB2300C91B7D /* omnifocus.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0908DF9614E6DB2300C91B7D /* omnifocus.1 */; };
 		0908DFD214E7031300C91B7D /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0908DFD114E7031300C91B7D /* ScriptingBridge.framework */; };
+		0908DFD514E70DBE00C91B7D /* BridgeComponentFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0908DFD414E70DBE00C91B7D /* BridgeComponentFinder.m */; };
+		0908DFD814E723CD00C91B7D /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 0908DFD714E723CD00C91B7D /* Task.m */; };
+		0908DFE214E7705700C91B7D /* StringMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0908DFE114E7705700C91B7D /* StringMatcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +37,13 @@
 		0908DF9614E6DB2300C91B7D /* omnifocus.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = omnifocus.1; sourceTree = "<group>"; };
 		0908DFD014E6FD5500C91B7D /* Omnifocus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Omnifocus.h; path = ../../../Dropbox/omnifocus_cli/Omnifocus.h; sourceTree = "<group>"; };
 		0908DFD114E7031300C91B7D /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		0908DFD314E70DBE00C91B7D /* BridgeComponentFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeComponentFinder.h; sourceTree = "<group>"; };
+		0908DFD414E70DBE00C91B7D /* BridgeComponentFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeComponentFinder.m; sourceTree = "<group>"; };
+		0908DFD614E723CD00C91B7D /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		0908DFD714E723CD00C91B7D /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		0908DFD914E7251300C91B7D /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		0908DFE014E7705700C91B7D /* StringMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringMatcher.h; sourceTree = "<group>"; };
+		0908DFE114E7705700C91B7D /* StringMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringMatcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +89,14 @@
 			isa = PBXGroup;
 			children = (
 				0908DFD014E6FD5500C91B7D /* Omnifocus.h */,
+				0908DFD314E70DBE00C91B7D /* BridgeComponentFinder.h */,
+				0908DFD414E70DBE00C91B7D /* BridgeComponentFinder.m */,
+				0908DFE014E7705700C91B7D /* StringMatcher.h */,
+				0908DFE114E7705700C91B7D /* StringMatcher.m */,
 				0908DF9214E6DB2300C91B7D /* main.m */,
+				0908DFD914E7251300C91B7D /* main.h */,
+				0908DFD614E723CD00C91B7D /* Task.h */,
+				0908DFD714E723CD00C91B7D /* Task.m */,
 				0908DF9614E6DB2300C91B7D /* omnifocus.1 */,
 				0908DF9414E6DB2300C91B7D /* Supporting Files */,
 			);
@@ -145,6 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0908DF9314E6DB2300C91B7D /* main.m in Sources */,
+				0908DFD514E70DBE00C91B7D /* BridgeComponentFinder.m in Sources */,
+				0908DFD814E723CD00C91B7D /* Task.m in Sources */,
+				0908DFE214E7705700C91B7D /* StringMatcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +180,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -186,6 +207,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
