@@ -35,7 +35,6 @@
 		0908DF9214E6DB2300C91B7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0908DF9514E6DB2300C91B7D /* omnifocus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "omnifocus-Prefix.pch"; sourceTree = "<group>"; };
 		0908DF9614E6DB2300C91B7D /* omnifocus.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = omnifocus.1; sourceTree = "<group>"; };
-		0908DFD014E6FD5500C91B7D /* Omnifocus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Omnifocus.h; path = ../../../Dropbox/omnifocus_cli/Omnifocus.h; sourceTree = "<group>"; };
 		0908DFD114E7031300C91B7D /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		0908DFD314E70DBE00C91B7D /* BridgeComponentFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeComponentFinder.h; sourceTree = "<group>"; };
 		0908DFD414E70DBE00C91B7D /* BridgeComponentFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeComponentFinder.m; sourceTree = "<group>"; };
@@ -44,6 +43,7 @@
 		0908DFD914E7251300C91B7D /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		0908DFE014E7705700C91B7D /* StringMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringMatcher.h; sourceTree = "<group>"; };
 		0908DFE114E7705700C91B7D /* StringMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringMatcher.m; sourceTree = "<group>"; };
+		0908DFE314EAA4A100C91B7D /* Omnifocus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Omnifocus.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 		0908DF9114E6DB2300C91B7D /* omnifocus */ = {
 			isa = PBXGroup;
 			children = (
-				0908DFD014E6FD5500C91B7D /* Omnifocus.h */,
+				0908DFE314EAA4A100C91B7D /* Omnifocus.h */,
 				0908DFD314E70DBE00C91B7D /* BridgeComponentFinder.h */,
 				0908DFD414E70DBE00C91B7D /* BridgeComponentFinder.m */,
 				0908DFE014E7705700C91B7D /* StringMatcher.h */,
