@@ -11,6 +11,7 @@
 
 #import <Foundation/Foundation.h>
 #import <ScriptingBridge/ScriptingBridge.h>
+#include <getopt.h>
 #import "Omnifocus.h"
 #import "BridgeComponentFinder.h"
 #import "Task.h"
