@@ -15,4 +15,7 @@
 #import "BridgeComponentFinder.h"
 #import "Task.h"
 
+void parse_args(int argc, char * const argv[]);
+void usage();
+
 #endif

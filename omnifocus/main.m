@@ -7,18 +7,50 @@
 //
 
 #include "main.h"
+#include <getopt.h>
 
-int main (int argc, const char * argv[])
+
+int main (int argc, char * const argv[])
 {
+    parse_args(argc, argv);
+    return 0;
+}
 
-    NSString *name;
-    if (argc > 1) {
-        name = [NSString stringWithCString:argv[1] encoding:NSASCIIStringEncoding] ;
-    } else { 
-        name = @"from obj-c when there wasn't an arg @Work d(tomorrow 6am) s(now) #pivotal ";
+
+void parse_args(int argc, char * const argv[]) {
+    int ch;
+    if (argc == 1) {
+        usage();
+        exit(0);
     }
 
-    [Task createTaskFromDictionary:name];
+    /* options descriptor */
+    struct option longopts[] = {
+        { "project",  required_argument,  NULL, 'p' },
+        { "context",  required_argument,  NULL, 'c' },
+        { "task",     required_argument,  NULL, 't' },
+        { NULL,       0,                  NULL,  0   }
+    };
+    
+    ch = getopt_long(argc, argv, "p:c:t:", longopts, NULL);
+    switch (ch) {
+    case 'p':
+      printf("Project: %s\n", optarg);
+      break;
+    case 'c':
+      printf("Context: %s\n", optarg);
+      break;
+    case 't':
+      printf("Creating Task: %s\n", optarg);
+      [Task createTaskFromEncodedString:[NSString stringWithCString:optarg encoding:NSASCIIStringEncoding]];
+      break;
+    case 0:
+      break;
+    default:
+      usage();
+    }
+}
 
-    return 0;
+void usage() {
+    printf("Usage: --project, --context, --task\n");
 }

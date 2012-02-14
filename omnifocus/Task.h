@@ -12,7 +12,7 @@
 @class BridgeComponentFinder;
 
 @interface Task : NSObject
-+ (void) createTaskFromDictionary: (NSString*) taskString;
++ (void) createTaskFromEncodedString: (NSString*) taskString;
 + (NSDictionary*) parseTaskString: (NSString*) taskString usingBridge: (BridgeComponentFinder*) bridge;
 @end
 

@@ -60,12 +60,12 @@
     NSString *s = [NSString stringWithFormat:
                    @"tell application \"OmniFocus\" to tell «property FCDo»\n"
                    @"\tset TheSearch to \"pivotal\"\n"
-                   @"\tset ProjectArray to complete TheSearch as project maximum matches 1\n"
-                   @"\treturn name of first item in ProjectArray\n"
+                   @"\tcomplete TheSearch as project maximum matches 1\n"
                    @"end tell\n"
                    , name, type];
     
     NSAppleScript *scriptObj = [[NSAppleScript alloc] initWithSource:s];
+
     NSDictionary *compileErrInfo;
     [scriptObj compileAndReturnError:&compileErrInfo];
     

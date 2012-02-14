@@ -19,7 +19,7 @@
     return self;
 }
 
-+ (void) createTaskFromDictionary: (NSString*) taskString {
++ (void) createTaskFromEncodedString: (NSString*) taskString {
     BridgeComponentFinder *bridge = [[BridgeComponentFinder alloc] init ];
     
 //    NSArray *tasks = [[bridge getOmnifocus] parseTasksWithTransportText:taskString asSingleTask:true];

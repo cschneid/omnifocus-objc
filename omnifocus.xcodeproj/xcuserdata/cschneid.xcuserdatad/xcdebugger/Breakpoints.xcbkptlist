@@ -51,11 +51,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "omnifocus/BridgeComponentFinder.m"
-         timestampString = "350859425.068524"
+         timestampString = "350865517.510628"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "66"
-         endingLineNumber = "66"
+         startingLineNumber = "65"
+         endingLineNumber = "65"
          landmarkName = "-fuzzyFindByName:andType:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -65,7 +65,7 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "omnifocus/BridgeComponentFinder.m"
-         timestampString = "350859425.068524"
+         timestampString = "350887320.999919"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "76"
@@ -79,7 +79,7 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "omnifocus/BridgeComponentFinder.m"
-         timestampString = "350859425.068524"
+         timestampString = "350887320.999919"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "82"
@@ -88,18 +88,58 @@
          landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "omnifocus/BridgeComponentFinder.m"
-         timestampString = "350859420.376253"
+         timestampString = "350887320.999919"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "72"
          endingLineNumber = "72"
          landmarkName = "-fuzzyFindByName:andType:"
          landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "omnifocus/main.m"
+         timestampString = "350887623.297357"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "68"
+         endingLineNumber = "68">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "omnifocus/main.m"
+         timestampString = "350887623.297357"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "50"
+         endingLineNumber = "50"
+         landmarkName = "parse_args()"
+         landmarkType = "7">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "omnifocus/main.m"
+         timestampString = "350887623.297357"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "40"
+         endingLineNumber = "40"
+         landmarkName = "parse_args()"
+         landmarkType = "7">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>
